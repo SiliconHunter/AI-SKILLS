@@ -302,7 +302,9 @@ def score_project(project: AlphaProject, binance_ticker: dict) -> AlphaProject:
         if liq < 10_000 and liq > 0:
             project.risks.append(f"⚠️  BSC 流动性偏低 (${liq:,.0f})")
     if project.trending_score > 0:
-        onchain += min(10, int(project.trending_score / 100))
+        # 修复: 旧代码 int(score/100) 导致 score<100 时 bonus=0
+        # 新逻辑: score>0 至少加 1 分, 每 10 点 boost 加 1 分, 上限 10
+        onchain += min(10, max(1, int(project.trending_score / 10)))
         project.highlights.append(f"🔥 BSC DEX 热度榜上榜（推广分值 {project.trending_score:.0f}）")
     score.onchain_heat = min(20, onchain)
 
