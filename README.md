@@ -10,15 +10,17 @@
 
 ```bash
 # Using Bun
-bunx skills add SiliconHunter/skills
+bunx skills add SiliconHunter/AI-SKILLS
 
 # Using NPM
-npx skills add SiliconHunter/skills
+npx skills add SiliconHunter/AI-SKILLS
 ```
 
 If your AI assistant supports skill installation, you can also send:
 
-> Install SiliconHunter skills at github.com/SiliconHunter/skills
+> Install SiliconHunter skills at github.com/SiliconHunter/AI-SKILLS
+
+**Note:** `npx skills` is the [Vercel open agent skills CLI](https://github.com/vercel-labs/skills) — it pulls directly from GitHub, no registry required.
 
 ---
 
@@ -69,24 +71,21 @@ Optional Python scripts are included in each `scripts/` directory for users who 
 ## Project Structure
 
 ```
-SiliconHunter/skills/
+SiliconHunter/AI-SKILLS/
 ├── README.md
-├── AGENTS.md
-├── CLAUDE.md → AGENTS.md
 ├── LICENSE
-└── skills/
-    ├── siliconhunter-rug-pull-hunter/
-    │   ├── SKILL.md
-    │   └── scripts/
-    │       └── analyze_contract.py
-    ├── siliconhunter-alpha-scout/
-    │   ├── SKILL.md
-    │   └── scripts/
-    │       └── opportunity_scorer.py
-    └── siliconhunter-grid-wizard/
-        ├── SKILL.md
-        └── scripts/
-            └── grid_calculator.py
+├── siliconhunter-rug-pull-hunter/
+│   ├── SKILL.md
+│   └── scripts/
+│       └── analyze_contract.py
+├── siliconhunter-alpha-scout/
+│   ├── SKILL.md
+│   └── scripts/
+│       └── opportunity_scorer.py
+└── siliconhunter-grid-wizard/
+    ├── SKILL.md
+    └── scripts/
+        └── grid_calculator.py
 ```
 
 ---
