@@ -1,8 +1,10 @@
 # 🦞 SiliconHunter Skills — Binance AI Agent Suite
 
-> **"龙虾主人，三大 AI Agent 为您守护资产、发现机会、优化收益。"**
+> **"Master Lobster, three AI Agents at your service — protecting assets, discovering opportunities, optimizing returns."**
 
-币安 AI 创意大赛参赛项目 | **#AI BUILD WITH BINANCE**
+Binance AI Contest Entry | **#AI BUILD WITH BINANCE**
+
+[中文文档 / Chinese Documentation](./README_ZH.md)
 
 ---
 
@@ -30,25 +32,25 @@ If your AI assistant supports skill installation, you can also send:
 
 BNB Chain token security scanner — input a contract address, get a red/yellow/green risk report with contract code analysis, liquidity health, holder concentration, and social sentiment.
 
-**Trigger:** "检查合约 0x..." · "这个币安不安全？" · "rug check"
+**Trigger:** "rug check 0x..." · "Is this token safe?" · "检查合约 0x..."
 
 ### 🦅 siliconhunter-alpha-scout
 
 Scan Binance Alpha, new listings, and BNB Chain DEX trending tokens. Score each project across 6 dimensions and push a ranked opportunity brief.
 
-**Trigger:** "有什么新机会？" · "Alpha 扫描" · "今天币安有什么好项目？"
+**Trigger:** "scan alpha" · "any new opportunities?" · "有什么新机会？"
 
 ### 🧙 siliconhunter-grid-wizard
 
-AI grid trading parameter wizard — user describes intent in natural language, agent calculates optimal grid params from Binance historical data, then auto-fills the Binance grid trading UI.
+AI grid trading parameter wizard — describe your intent in natural language, agent calculates optimal grid params from Binance historical data, then auto-fills the Binance grid trading UI.
 
-**Trigger:** "帮我设置网格" · "我想用 500 USDT 做 BNB 网格" · "对比三种策略"
+**Trigger:** "set up a BNB grid with 500 USDT" · "compare 3 grid strategies" · "帮我设置网格"
 
 ---
 
 ## How It Works
 
-All three skills run **entirely through OpenClaw's browser automation** — no Python, no API keys, no server required. The agent reads SKILL.md instructions, navigates to public websites (Etherscan, DEXScreener, Binance, CoinGecko, GoPlus), analyzes the page content with its LLM brain, and generates structured reports.
+All three skills run entirely through OpenClaw's browser automation — no Python, no API keys, no server required. The agent reads SKILL.md instructions, navigates to public websites (Etherscan, DEXScreener, Binance, CoinGecko, GoPlus), analyzes the page content with its LLM brain, and generates structured reports.
 
 Optional Python scripts are included in each `scripts/` directory for users who want standalone CLI tools.
 
@@ -73,6 +75,7 @@ Optional Python scripts are included in each `scripts/` directory for users who 
 ```
 SiliconHunter/AI-SKILLS/
 ├── README.md
+├── README_ZH.md
 ├── LICENSE
 ├── siliconhunter-rug-pull-hunter/
 │   ├── SKILL.md
